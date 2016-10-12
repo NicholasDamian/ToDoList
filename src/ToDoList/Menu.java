@@ -3,9 +3,11 @@ package ToDoList;
 /**
  * Created by nicholashall on 10/11/16.
  */
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Menu {
-    public void Menu() {
+     void Menu() throws IOException {
         int menuChoice;
         Scanner inputMenuChoice = new Scanner(System.in);
 
@@ -21,16 +23,20 @@ public class Menu {
         menuChoice = inputMenuChoice.nextInt();
         if (menuChoice == 1) {
             l1.AddToList();
-//        } else if(menuChoice == 2){
-////            Run remove items method
-//        } else if(menuChoice == 3){
-////            Run List Items method
-//        } else if( menuChoice == 4){
-////            Run Help method then return Menu
+        } else if(menuChoice == 2){
+            l1.Remove();
+        } else if(menuChoice == 3){
+            l1.PrintList();
+        } else if( menuChoice == 4){
+            System.out.println("Choice 1 allows the ability to add items to one of your lists");
+            System.out.println("Choice 2 allows the ability to remove items from the selected list");
+            System.out.println("Choice 3 allows the ability to go look over your lists");
+            System.out.println("You must hit choice 5 when exiting your program if you wish to save the progress for further use.");
+            Menu();
         }
         else{
             System.out.println("do nothing");
-//            Save and Quit
+            l1.save();
             }
 
         }

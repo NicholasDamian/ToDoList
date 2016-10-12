@@ -10,23 +10,19 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class ListMethods {
 
-    ArrayList<String> grocery = new ArrayList<>();
-    ArrayList<String> activity = new ArrayList<>();
-    ArrayList<String> shoes = new ArrayList<>();
 
+//    public void ()throws IOException {
 
-    String fileGrocery = "Grocery.txt";
-    FileWriter makeGrocery;
-
-    String fileActivity = "Activity.txt";
-    FileWriter makeActivity;
-
-    String fileShoes = "Shoes.txt";
-    FileWriter makeShoes;
-
-//try
+//        String fileGrocery = "Grocery.txt";
+//        FileWriter makeGrocery;
 //
-//    {
+//        String fileActivity = "Activity.txt";
+//        FileWriter makeActivity;
+//
+//        String fileShoes = "Shoes.txt";
+//        FileWriter makeShoes;
+//
+//
 //        makeGrocery = new FileWriter(fileGrocery, true);
 //        makeActivity = new FileWriter(fileActivity, true);
 //        makeShoes = new FileWriter(fileShoes, true);
@@ -34,32 +30,19 @@ public class ListMethods {
 //        Scanner inFileGrocery = new Scanner(new FileReader(fileGrocery));
 //        Scanner inFileActivity = new Scanner(new FileReader(fileActivity));
 //        Scanner inFileShoes = new Scanner(new FileReader(fileShoes));
-//    } catch(IOException e ){
-//        System.out.println("You broke it");
+//
+//        while (inFileGrocery.hasNextLine()) {
+//            grocery.add(inFileGrocery.nextLine());
+//        }
+//
+//        while (inFileActivity.hasNextLine()) {
+//            activity.add(inFileActivity.nextLine());
+//        }
+//
+//        while (inFileShoes.hasNextLine()) {
+//            shoes.add(inFileShoes.nextLine());
+//        }
 //    }
-
-
-    public void loadFiles()throws IOException {
-        makeGrocery = new FileWriter(fileGrocery, true);
-        makeActivity = new FileWriter(fileActivity, true);
-        makeShoes = new FileWriter(fileShoes, true);
-
-        Scanner inFileGrocery = new Scanner(new FileReader(fileGrocery));
-        Scanner inFileActivity = new Scanner(new FileReader(fileActivity));
-        Scanner inFileShoes = new Scanner(new FileReader(fileShoes));
-
-        while (inFileGrocery.hasNextLine()) {
-            grocery.add(inFileGrocery.nextLine());
-        }
-
-        while (inFileActivity.hasNextLine()) {
-            activity.add(inFileActivity.nextLine());
-        }
-
-        while (inFileShoes.hasNextLine()) {
-            shoes.add(inFileShoes.nextLine());
-        }
-    }
 
 //    FileWriter makeGrocery = new FileWriter(fileGrocery);
 }
